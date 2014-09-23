@@ -27,8 +27,10 @@ RUN yum clean all
 
 RUN mkdir -p /opt/log/nginx
 RUN mkdir -p /opt/static
-WORKDIR /opt
-ADD . /opt
+
+RUN mkdir /assets
+WORKDIR /assets
+ADD . /assets
 
 EXPOSE 80
 ENV DOCKER_HOST unix:///tmp/docker.sock
