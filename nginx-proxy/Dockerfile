@@ -25,8 +25,7 @@ RUN tar -C /usr/local/bin -xvzf docker-gen-linux-amd64-0.3.3.tar.gz
 
 RUN yum clean all
 
-RUN mkdir -p /opt/log/nginx
-RUN mkdir -p /opt/static
+VOLUME  ["/opt"]
 
 RUN mkdir /assets
 WORKDIR /assets
@@ -35,4 +34,8 @@ ADD . /assets
 EXPOSE 80
 ENV DOCKER_HOST unix:///tmp/docker.sock
 
-CMD ["forego", "start", "-r"]
+# Set the default command to run when starting the container
+RUN chmod a+x /assets/docker-entrypoint.sh
+ENTRYPOINT ["/assets/docker-entrypoint.sh"]
+
+CMD ["start"]
