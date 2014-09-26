@@ -49,15 +49,11 @@ server {
     error_log  /opt/log/nginx/{{ $host }}_error.log;
     access_log /opt/log/nginx/{{ $host }}_access.log;
 
-    # path for static files
-    root /opt/static;
-
-    location / {
-        # checks for static file, if not found proxy to app
-        try_files $uri @proxy_to_app;
+    location /static {
+        alias /opt/static;
     }
 
-    location @proxy_to_app {
+    location / {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header Host $http_host;
         proxy_redirect off;
