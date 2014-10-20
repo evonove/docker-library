@@ -7,3 +7,6 @@
 [submodule "docker-ci"]
 	path = docker-ci
 	url = git@github.com:evonove/docker-ci.git
+[submodule "celery"]
+	path = celery
+	url = git@github.com:evonove/docker-celery.git
