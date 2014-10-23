@@ -13,3 +13,6 @@
 [submodule "nginx-static"]
 	path = nginx-static
 	url = git@github.com:evonove/docker-nginx-static.git
+[submodule "gulp-builder"]
+	path = gulp-builder
+	url = git@github.com:evonove/docker-gulp-builder.git
