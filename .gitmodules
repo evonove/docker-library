@@ -10,3 +10,6 @@
 [submodule "celery"]
 	path = celery
 	url = git@github.com:evonove/docker-celery.git
+[submodule "nginx-static"]
+	path = nginx-static
+	url = git@github.com:evonove/docker-nginx-static.git
