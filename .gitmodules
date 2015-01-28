@@ -16,3 +16,6 @@
 [submodule "gulp-builder"]
 	path = gulp-builder
 	url = git@github.com:evonove/docker-gulp-builder.git
+[submodule "python"]
+	path = python
+	url = git@github.com:evonove/docker-python.git
