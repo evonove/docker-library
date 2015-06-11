@@ -19,3 +19,6 @@
 [submodule "python"]
 	path = python
 	url = git@github.com:evonove/docker-python.git
+[submodule "docker-scratch"]
+	path = docker-scratch
+	url = git@github.com:evonove/docker-scratch.git
