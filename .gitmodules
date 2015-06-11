@@ -22,3 +22,6 @@
 [submodule "docker-scratch"]
 	path = docker-scratch
 	url = git@github.com:evonove/docker-scratch.git
+[submodule "redis"]
+	path = redis
+	url = git@github.com:evonove/docker-redis.git
