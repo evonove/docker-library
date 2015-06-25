@@ -25,3 +25,6 @@
 [submodule "scratch-image"]
 	path = scratch-image
 	url = git@github.com:evonove/docker-scratch.git
+[submodule "centrifugo"]
+	path = centrifugo
+	url = git@github.com:evonove/docker-centrifugo.git
