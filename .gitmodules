@@ -28,3 +28,12 @@
 [submodule "centrifugo"]
 	path = centrifugo
 	url = git@github.com:evonove/docker-centrifugo.git
+[submodule "elasticsearch"]
+	path = elasticsearch
+	url = git@github.com:evonove/docker-elasticsearch.git
+[submodule "logstash"]
+	path = logstash
+	url = git@github.com:evonove/docker-logstash.git
+[submodule "kibana"]
+	path = kibana
+	url = git@github.com:evonove/docker-kibana.git
