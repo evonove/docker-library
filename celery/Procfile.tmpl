@@ -1,0 +1,3 @@
+celery: PYTHONPATH={{ .Env.CELERY_APP_DIRS }} celery --app={{ .Env.CELERY_APP }} worker -l info
+celerybeat: PYTHONPATH={{ .Env.CELERY_APP_DIRS }} celery --app={{ .Env.CELERY_APP }} beat
+celeryflower: PYTHONPATH={{ .Env.CELERY_APP_DIRS }} celery flower {{if .Env.FLOWER_AUTH}}--basic_auth="{{ .Env.FLOWER_AUTH }}"{{end}}
